@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-width: 0;
+    min-height: 0;
+    font-family: sans-serif;
+    transition: all 300ms;
+}
+
+html {
+    -webkit-filter:  brightness(105%) contrast(104%) grayscale(10%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(100%) sepia(50%);
+            filter:  brightness(105%) contrast(104%) grayscale(10%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(100%) sepia(50%);
+            scroll-behavior: smooth;
+}
+        
+body {
+    background: url(Assets/e-waste-crisis-global-impact-and-sustainable-solutions-hero.avif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    padding: 10px 4vw;
+    color: rgb(189, 168, 151);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(180deg, rgb(53, 53, 53), 40%, transparent);
+}
+
+nav h1 {
+    font-size: 15px;
+}
+
+nav div a {
+    font-size: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+nav div a:hover {
+    text-decoration: underline;
+}
+
+nav div button {
+    font-size: 10px;
+}
+
+main {
+    width: 100%;
+    height: 100dvh;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+    color: aqua;
+}
+
+button a:hover {
+    text-decoration: none !important;
+}
+
+div:has(main) {
+    background: linear-gradient(45deg, rgb(0, 53, 48), 70%, rgba(0, 0, 0, 0));
+}
+
+#main-text {
+    width: 80%;
+    height: 100%;
+    padding: 4vw;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#main-text h1, #History h1, #Problem h1, #Cause h1, #Solution h1 {
+    font-family: "Anton", sans-serif;
+    font-size: 6vw;
+    line-height: 80%;
+    color: rgb(189, 168, 151);
+    text-shadow: 9px 9px 0px rgba(128, 0, 0, 0.7);
+}
+
+#main-text h2, #History h2, #Problem-main div h2, #Cause h2, #Solution h2 {
+    color: aqua;
+    font-size: 3vw;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+#main-text p {
+    margin-top: 10px;
+    width: 60%;
+    font-size: 1vw;
+    text-align: justify;
+}
+
+button {
+    cursor: pointer;
+    width: fit-content;
+    margin-top: 5px;
+    color: aqua;
+    background-color: transparent;
+    border: 3px solid white;
+    padding: 5px;
+    font-size: 1vw;
+    border-bottom-right-radius: 10px;
+    font-weight: 600;
+}
+
+button:hover {
+    color: white;
+    border: 3px solid aqua;
+}
+
+#History {
+    background: linear-gradient(transparent, rgb(0, 53, 48));
+    min-height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+td img {
+    height: 300px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,
+      minmax(200px, 1fr));
+}
+
+.grid>div {
+    padding: 1rem;
+    text-align: center;
+}
+
+#History h1 {
+    padding: 30px;
+    text-align: center;
+}
+
+#History p {
+    color: white;
+    text-align: justify;
+}
+
+#History h2 {
+    line-height: 70%;
+    color: rgb(189, 168, 151);
+}
+
+#History h3 {
+    color: aqua;
+}
+
+#Problem {
+    min-height: 100dvh;
+    background-color: rgb(0, 121, 109);
+}
+
+#Problem-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100dvh;
+    padding: 4vw;
+}
+
+#Problem-main h1 {
+    line-height: 100%;
+}
+
+#Problem-main div {
+    padding-left: 5vw;
+}
+
+#Problem-main div h2 {
+    font-size: 50px;
+    line-height: 70%;
+    padding-top: 30px;
+}
+
+#Problem-main div p {
+    color: white;
+}
+
+#Cause {
+    background-color: #003530;
+    min-height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#Cause > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+}
+
+#Cause > div h1 {
+    line-height: 100%;
+}
+
+#Cause > div p {
+    color: white;
+}
+
+.block {
+    border: 3px solid white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#Solution {
+    min-height: 100dvh;
+    background-color: rgb(0, 121, 109);
+    padding: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#Sol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.custom-shape-divider-top-1727859037 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1727859037 svg {
+    position: relative;
+    display: block;
+    width: calc(120% + 1.3px);
+    height: 75px;
+}
+
+.custom-shape-divider-top-1727859037 .shape-fill {
+    fill: #003530;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: rgb(189, 168, 151); 
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(196, 157, 126); 
+}
+
+@media (min-width: 900px) {
+    #grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media only screen and (max-width: 800px) {
+    #main-text {
+        width: 100%;
+    }
+
+    #main-text h1 {
+        font-size: 50px;
+        line-height: 100%;
+    }
+
+    #main-text h2, #History h2 {
+        font-size: 4vw;
+    }
+    
+    #main-text p {
+        font-size: 1.5vw;
+    }
+}
+
+@media only screen and (max-width: 565px) {
+    #main-text p {
+        font-size: 10px;
+        width: 100%;
+    }
+
+    #main-text h2, #History h2 {
+        font-size: 30px;
+        width: 100%;
+    }
+
+    button {
+        border: 2px solid white;
+        padding: 2px;
+        border-bottom-right-radius: 5px;
+    }
+}
